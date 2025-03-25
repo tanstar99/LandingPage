@@ -4,7 +4,7 @@ import { Suspense, useRef, useEffect } from "react";
 
 function ShoeModel() {
   const { scene } = useGLTF("/shoe_model.glb");
-  return <primitive object={scene} scale={[1.7, 1.7, 1.7]} position={[0.1, 0.2, -0.4]} />;
+  return <primitive object={scene} scale={[1.5, 1.5, 1.5]} position={[0.1, 0.2, -0.4]} />;
 }
 
 export default function Shoe3DModel() {

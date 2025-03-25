@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
-import FeaturedProducts from "@/components/featured-products";
+// import FeaturedProducts from "@/components/featured-products";
 import Innovation from "@/components/innovation";
 import Timeline from "@/components/timeline";
 import ProductShowcase from "@/components/product-showcase";
@@ -16,7 +16,7 @@ export default function Home() {
       <CustomCursor />
       <Navbar />
       <Hero />
-      <FeaturedProducts />
+      {/* <FeaturedProducts /> */}
       <ProductShowcase />
       <Innovation />
       <Timeline />
