@@ -140,10 +140,13 @@ export default function Navbar() {
             {/* ✅ Centered & Hidden Text Until Hover */}
             <div className="flex justify-center">
               <Button className="relative w-[80%] border border-red-500 text-white py-1 px-3 rounded text-sm group hover:bg-red-500 hover:text-white">
+                <Link href={"https://loading-nike-final-repo.vercel.app/"}>
+              <Button className="relative w-[80%] border border-red-500 text-white py-1 px-3 rounded text-sm group hover:bg-red-500 hover:text-white">
                 <span className="opacity-100 group-hover:opacity-80 transition-opacity duration-300">
                   Sign in as Guest
                 </span>
               </Button>
+              </Link>
             </div>
           </div>
         </div>
