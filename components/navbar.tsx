@@ -116,41 +116,39 @@ export default function Navbar() {
       {/* ✅ Login/Signup Popup (Modal) */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/70 backdrop-blur-lg z-50">
-        <div className="bg-black text-white p-6 rounded-lg shadow-lg w-[350px] relative">
-          
-          {/* ✅ Centered Heading */}
-          <h2 className="text-lg font-semibold text-red-500 text-center">Login / Sign Up</h2>
-      
-          {/* ❌ Close button positioned separately */}
-          <button 
-            onClick={() => setIsModalOpen(false)} 
-            className="absolute right-4 top-4 text-white hover:text-red-500"
-          >
-            <X className="h-6 w-6" />
-          </button>
-      
-          <div className="mt-4 space-y-4">
-            <Button className="w-full bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">
-              Login
-            </Button>
-            <Button className="w-full bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded">
-              Sign Up
-            </Button>
-      
-            {/* ✅ Centered & Hidden Text Until Hover */}
-            <div className="flex justify-center">
-              <Button className="relative w-[80%] border border-red-500 text-white py-1 px-3 rounded text-sm group hover:bg-red-500 hover:text-white">
-                <a href="https://loading-nike-final-repo.vercel.app/">
-              <Button className="relative w-[80%] border border-red-500 text-white py-1 px-3 rounded text-sm group hover:bg-red-500 hover:text-white">
-                <span className="opacity-100 group-hover:opacity-80 transition-opacity duration-300">
-                  Sign in as Guest
-                </span>
+          <div className="bg-black text-white p-6 rounded-lg shadow-lg w-[350px] relative">
+            {/* ✅ Centered Heading */}
+            <h2 className="text-lg font-semibold text-red-500 text-center">Login / Sign Up</h2>
+
+            {/* ❌ Close button positioned separately */}
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute right-4 top-4 text-white hover:text-red-500"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            <div className="mt-4 space-y-4">
+              <Button className="w-full bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">
+                Login
               </Button>
-              </a>  
+              <Button className="w-full bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded">
+                Sign Up
+              </Button>
+
+              {/* ✅ Centered & Hidden Text Until Hover */}
+              <div className="flex justify-center">
+                <a href="https://loading-nike-final-repo.vercel.app/">
+                  <Button className="relative w-[80%] border border-red-500 text-white py-1 px-3 rounded text-sm group hover:bg-red-500 hover:text-white">
+                    <span className="opacity-100 group-hover:opacity-80 transition-opacity duration-300">
+                      Sign in as Guest
+                    </span>
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       )}
     </>
   )
